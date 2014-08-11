@@ -3,6 +3,7 @@ body {
   font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 100;
   background: #1a1917 url(../img/background.jpg) repeat top left;
+  color: #ffffff;
 }
 .text-muted {
   color: #777777;
@@ -193,6 +194,7 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   margin-right: 10px;
   text-decoration: underline;
+  text-shadow: 0 0 1px black;
 }
 .navbar-default .nav li a.plain:hover,
 .navbar-default .nav li a.plain:focus {
@@ -250,6 +252,10 @@ fieldset[disabled] .btn-xl.active {
   color: #ffffff;
   margin: 0 auto;
   padding: 10px;
+  white-space: pre;
+}
+.jumbotron img {
+  max-width: 90%;
 }
 section {
   background: rgba(0, 0, 0, 0.8);
@@ -474,6 +480,29 @@ header {
     float: right;
     text-align: left;
     padding: 0 30px 20px 20px;
+  }
+  .jumbotron {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+@media (max-width: 768px) {
+  section .lead:before,
+  section .lead:after {
+    display: none;
+  }
+  .navbar-default .nav li a.plain {
+    text-decoration: none;
+    text-shadow: none;
+    background: #ff0086;
+    color: #ffffff;
+  }
+  .navbar-default .nav li a.plain:hover,
+  .navbar-default .nav li a.plain:focus {
+    text-shadow: none;
+    color: #ff0086;
+    background: #ffffff;
+    text-decoration: none;
   }
 }
 @media (min-width: 992px) {

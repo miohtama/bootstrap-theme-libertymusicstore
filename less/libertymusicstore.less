@@ -7,7 +7,8 @@
 body {
 	overflow-x: hidden;
 	.body-font;
-  background: @body-bg url(../img/background.jpg) repeat top left;
+    background: @body-bg url(../img/background.jpg) repeat top left;
+    color: @brand-text-on-background;
 }
 
 .text-muted {
@@ -132,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
                 color: white;
                 margin-right: 10px;
                 text-decoration: underline;
+                text-shadow: 0 0 1px black;
                 &:hover,
                 &:focus {
                     color: @brand-primary;
@@ -195,7 +197,14 @@ h1, h2, h3, h4, h5, h6 {
            color: @brand-text-on-primary;
            margin: 0 auto;
            padding: 10px;
+           // Prevent adding overlaying text on
+           // narrow screen
+           white-space: pre;
         }
+    }
+
+    img {
+        max-width: 90%;
     }
 }
 
@@ -455,6 +464,43 @@ section, header {
 	        }
 	    }
 	}
+
+    .jumbotron {
+        padding-left: 0;
+        padding-right: 0;
+    }
+}
+
+@media(max-width:768px) {
+    section {
+        .lead:before,
+        .lead:after {
+            display: none;
+        }
+    }
+
+
+    // Convert all navbar links to menu ones
+    .navbar-default {
+        .nav {
+            li {
+                a.plain {
+                    text-decoration: none;
+                    text-shadow: none;
+                    background: @brand-primary;
+                    color: @brand-text-on-primary;
+                    &:hover,
+                    &:focus {
+                        text-shadow: none;
+                        color: @brand-primary;
+                        background: @brand-text-on-primary;
+                        text-decoration: none;
+                    }
+                }
+            }
+        }
+    }
+
 }
 
 @media(min-width:992px) {
