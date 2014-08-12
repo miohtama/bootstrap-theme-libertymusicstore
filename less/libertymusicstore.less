@@ -11,6 +11,14 @@ body {
     color: @brand-text-on-background;
 }
 
+// Heading highlights
+h1 {
+    strong {
+        color: @brand-primary;
+        text-shadow: 0 0 6px @brand-primary;
+    }
+}
+
 .text-muted {
 	color: @gray;
 }
@@ -20,8 +28,8 @@ body {
 }
 
 p {
-	font-size: 20px;
-	line-height: 1.75;
+	font-size: 18px;
+	line-height: 1.5;
 }
 
 p.large {
@@ -87,15 +95,22 @@ h1, h2, h3, h4, h5, h6 {
 
     background: transparent;
     border: 0;
+    padding: 0 0 25px 0;
 
 	.navbar-brand {
 		color: @brand-primary;
-		.script-font;
+        padding: 0;
+        margin: 0;
+
         &:hover,
         &:focus,
         &:active,
         &.active {
         	color: darken(@brand-primary, 10%);
+        }
+
+        img {
+            width: 200px;
         }
 	}
 	.navbar-collapse {
@@ -153,15 +168,39 @@ h1, h2, h3, h4, h5, h6 {
 	}
 }
 
-// Disable top right logo on the front page
-.front-page .navbar-brand {
-	display: none;
+//
+// Table of contents
+//
+
+.nav-list {
+    background: @brand-tertiary;
+    border: 2px solid @brand-primary;
+
+    list-style-type: none;
+
+    li {
+        display: list-item;
+        font-weight: 300;
+        padding: 0;
+        margin: 0;
+
+
+        a {
+            color: white;
+            display: block;
+            padding-left: 1em;
+
+            &:hover {
+                background: @brand-secondary;
+                color: @brand-text-on-secondary;
+            }
+        }
+    }
 }
 
 @media(min-width:768px) {
     .navbar-default {
     	background-color: transparent;
-        padding: 25px 0;
         -webkit-transition: padding 0.3s;
         -moz-transition: padding 0.3s;
         transition: padding 0.3s;
@@ -209,9 +248,6 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-@media(min-width:768px) {
-}
-
 // Global Section Styles
 
 section {
@@ -222,8 +258,18 @@ section {
         color: @brand-text-on-background;
     }
 
-    .lead:before,
-    .lead:after {
+    .lead-content {
+        .body-font;
+
+        a {
+            color: @brand-secondary;
+        }
+    }
+
+    // Lead with blue highlight
+
+    .lead-highlight:before,
+    .lead-highlight:after {
         width: 20px;
         content: "\00a0";
         background: @brand-secondary;
@@ -238,8 +284,12 @@ section {
         margin-left: 20px;
     }
 
+    &:first-of-type {
+        padding-top: 70px;
+    }
+
     &:last-of-type {
-        padding-bottom: 50px;
+        padding-bottom: 70px;
     }
 }
 
@@ -251,6 +301,35 @@ section, header, #footer-inner {
     margin: 0 auto;
 }
 
+// Panel styles
+.panel {
+
+    border: 2px solid @brand-primary;
+
+    .panel-heading {
+        background: @brand-primary;
+        color: @brand-text-on-primary;
+        border: 0;
+        text-transform: uppercase;
+    }
+
+    .panel-body {
+        background: @brand-tertiary;
+        color: @brand-text-on-tertiary;
+
+        a {
+            color: @brand-secondary;
+            text-decoration: none;
+
+            &:hover {
+                color: @brand-heading-on-tertiary;
+            }
+        }
+    }
+}
+
+
+// Styles for shrinken site
 
 @media(max-width:768px) {
     section {
@@ -309,6 +388,12 @@ footer {
         padding: 20px;
         position: relative;
         min-height: 200px;
+
+        #copyright {
+            position: absolute;
+            top: 20px;
+            left: 80px;
+        }
 
         #follow {
             position: absolute;
@@ -405,6 +490,12 @@ body {
 // Front page specific
 //
 
+// Disable top right logo on the front page
+.front-page .navbar-brand {
+    display: none;
+}
+
+
 // Make all entries same height
 .marketing .entry {
     min-height: 270px;
@@ -455,5 +546,10 @@ body {
 
 #example-stores {
     margin-top: 20px;
+}
+
+// About page styles
+.panel-spacer {
+    height: 30px;
 }
 

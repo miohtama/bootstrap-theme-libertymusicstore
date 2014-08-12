@@ -5,6 +5,10 @@ body {
   background: #1a1917 url(../img/background.jpg) repeat top left;
   color: #fafafa;
 }
+h1 strong {
+  color: #ff0086;
+  text-shadow: 0 0 6px #ff0086;
+}
 .text-muted {
   color: #777777;
 }
@@ -12,8 +16,8 @@ body {
   color: #ff0086;
 }
 p {
-  font-size: 20px;
-  line-height: 1.75;
+  font-size: 18px;
+  line-height: 1.5;
 }
 p.large {
   font-size: 16px;
@@ -147,17 +151,21 @@ fieldset[disabled] .btn-xl.active {
 .navbar-default {
   background: transparent;
   border: 0;
+  padding: 0 0 25px 0;
 }
 .navbar-default .navbar-brand {
   color: #ff0086;
-  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: 100;
+  padding: 0;
+  margin: 0;
 }
 .navbar-default .navbar-brand:hover,
 .navbar-default .navbar-brand:focus,
 .navbar-default .navbar-brand:active,
 .navbar-default .navbar-brand.active {
   color: #cc006b;
+}
+.navbar-default .navbar-brand img {
+  width: 200px;
 }
 .navbar-default .navbar-collapse {
   border-color: rgba(255, 255, 255, 0.02);
@@ -210,13 +218,29 @@ fieldset[disabled] .btn-xl.active {
   color: white;
   background-color: #cc006b;
 }
-.front-page .navbar-brand {
-  display: none;
+.nav-list {
+  background: #1a1917;
+  border: 2px solid #ff0086;
+  list-style-type: none;
+}
+.nav-list li {
+  display: list-item;
+  font-weight: 300;
+  padding: 0;
+  margin: 0;
+}
+.nav-list li a {
+  color: white;
+  display: block;
+  padding-left: 1em;
+}
+.nav-list li a:hover {
+  background: #00b4ff;
+  color: #fafafa;
 }
 @media (min-width: 768px) {
   .navbar-default {
     background-color: transparent;
-    padding: 25px 0;
     -webkit-transition: padding 0.3s;
     -moz-transition: padding 0.3s;
     transition: padding 0.3s;
@@ -265,8 +289,15 @@ section .lead {
   font-weight: 400;
   color: #fafafa;
 }
-section .lead:before,
-section .lead:after {
+section .lead-content {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 100;
+}
+section .lead-content a {
+  color: #00b4ff;
+}
+section .lead-highlight:before,
+section .lead-highlight:after {
   width: 20px;
   content: "\00a0";
   background: #00b4ff;
@@ -278,8 +309,11 @@ section .lead:before {
 section .lead:after {
   margin-left: 20px;
 }
+section:first-of-type {
+  padding-top: 70px;
+}
 section:last-of-type {
-  padding-bottom: 50px;
+  padding-bottom: 70px;
 }
 section,
 header,
@@ -288,6 +322,26 @@ header,
   max-width: 1280px;
   padding: 20px;
   margin: 0 auto;
+}
+.panel {
+  border: 2px solid #ff0086;
+}
+.panel .panel-heading {
+  background: #ff0086;
+  color: #fafafa;
+  border: 0;
+  text-transform: uppercase;
+}
+.panel .panel-body {
+  background: #1a1917;
+  color: #9c9897;
+}
+.panel .panel-body a {
+  color: #00b4ff;
+  text-decoration: none;
+}
+.panel .panel-body a:hover {
+  color: #fafafa;
 }
 @media (max-width: 768px) {
   section .lead:before,
@@ -328,6 +382,11 @@ footer #footer-inner {
   padding: 20px;
   position: relative;
   min-height: 200px;
+}
+footer #footer-inner #copyright {
+  position: absolute;
+  top: 20px;
+  left: 80px;
 }
 footer #footer-inner #follow {
   position: absolute;
@@ -399,6 +458,9 @@ img::-moz-selection {
 body {
   webkit-tap-highlight-color: #ff0086;
 }
+.front-page .navbar-brand {
+  display: none;
+}
 .marketing .entry {
   min-height: 270px;
 }
@@ -439,5 +501,8 @@ body {
 }
 #example-stores {
   margin-top: 20px;
+}
+.panel-spacer {
+  height: 30px;
 }
 /*# sourceMappingURL=libertymusicstore.css.map */
