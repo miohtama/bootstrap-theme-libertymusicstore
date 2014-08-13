@@ -1,0 +1,37 @@
+// Credits: http://stackoverflow.com/a/17107851/315168
+.pulse-in() {
+    box-shadow: -1px -1px 5px rgba(255, 0, 128, 0.8);
+    background-color: #ff0086;
+
+}
+
+.pulse-out() {
+    box-shadow: -1px -1px 13px rgba(255, 192, 255, 0.9);
+    background-color: #ff40a0;
+}
+
+@-webkit-keyframes shadow {
+    0% { .pulse-in; }
+    50% {.pulse-out; }
+    100% { .pulse-in; }
+}
+
+@-moz-keyframes shadow {
+    0% { .pulse-in; }
+    50% {.pulse-out; }
+    100% { .pulse-in; }
+}
+
+@keyframes shadow {
+    0% { .pulse-in; }
+    50% {.pulse-out; }
+    100% { .pulse-in; }
+}
+
+.pulse {
+    box-shadow: -1px -1px 5px rgba(50, 50, 50, 0.75);
+    -webkit-animation: shadow 4s ease-in-out infinite;
+    -moz-animation: shadow 4s ease-in-out infinite;
+    animation: shadow 4s ease-in-out infinite;
+}
+

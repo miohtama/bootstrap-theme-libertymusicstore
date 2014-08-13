@@ -1,5 +1,6 @@
 @import "variables.less";
 @import "mixins.less";
+@import "pulse.less";
 
 // Global Components
 
@@ -232,6 +233,7 @@ h1, h2, h3, h4, h5, h6 {
     .lead {
         margin-top: 40px;
         .body-font-bolder;
+        text-shadow: 0 1px 1px rgba(66, 66, 66, 0.8);
         .lead-inner {
            background: @brand-secondary;
            color: @brand-text-on-secondary;
@@ -252,6 +254,10 @@ h1, h2, h3, h4, h5, h6 {
 
 section {
     background: rgba(0,0,0,0.8);
+
+    h2, h3, h4 {
+        text-shadow: 0 0 1px rgba(0, 0, 0, 0.8);
+    }
 
     .lead {
         .heading-font;
@@ -305,17 +311,25 @@ section, header, #footer-inner {
 .panel {
 
     border: 2px solid @brand-primary;
+    background-color: @brand-primary;
 
     .panel-heading {
         background: @brand-primary;
         color: @brand-text-on-primary;
         border: 0;
         text-transform: uppercase;
+        border-color: @brand-primary;
+        padding: 10px;
+
+        h3 {
+            margin: 5px;
+        }
     }
 
     .panel-body {
         background: @brand-tertiary;
         color: @brand-text-on-tertiary;
+        .body-font-bolder;
 
         a {
             color: @brand-secondary;
@@ -328,6 +342,11 @@ section, header, #footer-inner {
     }
 }
 
+// Image styles
+.img-thumbnail {
+    background: @brand-primary;
+    border: @brand-primary-darker;
+}
 
 // Styles for shrinken site
 
@@ -338,7 +357,6 @@ section, header, #footer-inner {
             display: none;
         }
     }
-
 
     // Convert all navbar links to menu ones
     .navbar-default {
@@ -375,6 +393,7 @@ footer {
     h4 {
         text-transform: uppercase;
         color: @brand-heading-on-tertiary;
+        font-size: 16px;
     }
 
     #footer-border {
@@ -384,10 +403,14 @@ footer {
         border-top: 5px solid @brand-primary;
     }
 
+    p {
+        font-size: 16px;
+    }
+
     #footer-inner {
         padding: 20px;
         position: relative;
-        min-height: 200px;
+        min-height: 150px;
 
         #copyright {
             position: absolute;
@@ -400,6 +423,7 @@ footer {
             right: 300px;
             top: 10px;
             max-width: 200px;
+            font-size: 80%;
         }
 
         #social {
@@ -427,7 +451,7 @@ footer {
                     line-height: 0;
                     font-size: 0;
                     position: absolute;
-                    top: 37px;
+                    top: 36px; // Be careful with gaps - browsers render borders differentlys
                     left: 20px;
                     border-top: 30px solid @jazz-white;
                     border-right: 30px solid transparent;
@@ -487,6 +511,16 @@ body {
 }
 
 //
+// Extra Bootstrap classes
+//
+.btn-mega {
+    font-size: 200%;
+    text-shadow: 0 2px 0 rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+//
 // Front page specific
 //
 
@@ -514,38 +548,50 @@ body {
     }
 }
 
-#out-now .media {
+#out-now {
 
-    background: @brand-primary;
-    color: @brand-text-on-primary;
-    display: block;
-    text-decoration: none;
-    padding: 0;
-    margin: 20px;
+    #example-stores {
 
-    .media-heading {
-        padding-top: 10px;
+        margin-top: 20px;
+        text-align: center;
+
+        .media {
+
+            text-align: left;
+            background: @brand-primary;
+            color: @brand-text-on-primary;
+            display: inline-block;
+            text-decoration: none;
+            padding: 0;
+            margin: 20px;
+            width: 400px;
+            max-width: 90%;
+
+            .media-heading {
+                padding-top: 10px;
+                text-shadow: 0 1px 1px black;
+            }
+
+            .media-body > p {
+                font-size: 100%;
+                text-shadow: 0 1px 3px black;
+            }
+
+            .media-object {
+                height: 128px;
+            }
+
+            &:hover,
+            &:focus,
+            &:active {
+                background: @brand-secondary;
+                color: @brand-text-on-secondary;
+                text-decoration: none;
+            }
+
+        }
     }
 
-    .media-body > p {
-        font-size: 100%;
-    }
-
-    .media-object {
-        height: 128px;
-    }
-
-    &:hover,
-    &:focus,
-    &:active {
-        background: @brand-secondary;
-        color: @brand-text-on-secondary;
-        text-decoration: none;
-    }
-}
-
-#example-stores {
-    margin-top: 20px;
 }
 
 // About page styles
