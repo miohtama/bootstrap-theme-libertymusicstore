@@ -509,6 +509,41 @@ footer {
     }
 }
 
+//
+// Forms and inputs
+//
+input[type=text],
+input[type=password],
+input[type=email],
+input[type=url] {
+    border: 2px solid @brand-secondary;
+    background: black;
+    color: white;
+    .heading-font;
+}
+
+label {
+    .heading-font;
+    font-size: 17px;
+}
+
+select {
+    .heading-font;
+    color: red;
+}
+
+input:-webkit-autofill {
+    color: black;
+    border: 2px solid gray;
+}
+
+.help-block {
+    color: #aaa;
+}
+
+.btn {
+    background: @brand-primary;
+}
 
 .btn:focus,
 .btn:active,
