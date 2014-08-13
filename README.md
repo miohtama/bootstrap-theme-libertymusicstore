@@ -11,6 +11,7 @@ Licensed under Apache 2.0.
 # Usage
 
 This theme builds a CSS file which you can install as an overlay over vanilla Bootstrap CSS.
+For examples see supplied HTML files.
 
 # Rebuilding the theme
 
@@ -26,9 +27,13 @@ Rebuilding the theme CSS:
 
     node_modules/grunt-cli/bin/grunt less
 
+Rebuiding the theme production deployment (minified CSS):
+
+    node_modules/grunt-cli/bin/grunt production
+
 # Live editing of LESS
 
-Then start `grunt` in watch mode:
+Then start `grunt` in watch mode, will recompile CSS everything LESS changes:
 
      node_modules/grunt-cli/bin/grunt watch
 

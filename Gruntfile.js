@@ -1,5 +1,8 @@
 module.exports = function(grunt) {
     grunt.initConfig({
+
+        // Options:
+        // https://github.com/gruntjs/grunt-contrib-less
         less: {
             development: {
                 options: {
@@ -12,6 +15,17 @@ module.exports = function(grunt) {
                 },
                 files: {
                     "css/libertymusicstore.css": "less/libertymusicstore.less"
+                },
+            },
+            production: {
+                options: {
+                  paths: ["assets/css"],
+                  cleancss: true,
+                  // NO KNEELING TOWARDS REDMOND
+                  ieCompat: false
+                },
+                files: {
+                    "css/libertymusicstore.min.css": "less/libertymusicstore.less"
                 }
             }
         },
@@ -22,4 +36,6 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+
+    grunt.registerTask('production', ['less:production']);
 };
