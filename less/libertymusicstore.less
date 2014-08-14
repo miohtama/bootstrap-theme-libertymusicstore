@@ -385,8 +385,13 @@ section, header, #footer-inner {
     // Convert all navbar links to menu ones
     .navbar-default {
         .nav {
+            margin: 20px 5px 5px 5px;
             li {
+                a {
+                    margin: 0;
+                }
                 a.plain {
+                    margin: 0;
                     text-decoration: none;
                     text-shadow: none;
                     background: @brand-primary;
@@ -640,6 +645,7 @@ body {
             margin: 20px;
             width: 400px;
             max-width: 90%;
+            position: relative;
 
             .media-heading {
                 padding-top: 10px;
@@ -663,6 +669,21 @@ body {
                 text-decoration: none;
             }
 
+        }
+
+        .fb-shop {
+            background: #2E4588;
+            color: white;
+            position: absolute;
+            right: 10px;
+            bottom: 10px;
+            font-size: 25px;
+            display: block;
+            width: 35px;
+            height: 35px;
+            text-align: center;
+            border-radius: 2px;
+            border: 1px solid #333;
         }
     }
 
