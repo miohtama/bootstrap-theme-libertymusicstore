@@ -256,9 +256,6 @@ a.active {
            color: @brand-text-on-secondary;
            margin: 0 auto;
            padding: 10px;
-           // Prevent adding overlaying text on
-           // narrow screen
-           white-space: pre;
         }
     }
 
@@ -406,7 +403,18 @@ section, header, #footer-inner {
         }
     }
 
-    #copyright {
+    .jumbotron {
+        .lead {
+            .lead-inner {
+                // Prevent adding overlaying text on
+                // narrow screen
+                display: block;
+            }
+        }
+    }
+
+    #copyright,
+    #follow {
         display: none;
     }
 
