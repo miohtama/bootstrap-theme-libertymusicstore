@@ -1,17 +1,23 @@
 # Bootstrap theme for Liberty Music Store
 
-Copyright 2014 Mikko Ohtamaa, Irina Rinkovec, Mathavan Jaya and Bootstrap authors.
+This is a free Bootstrap 3.2.x theme originally build for [libertymusicstore.net](https://libertymusicstore.net).
+
+[Liberty Music Store is a place where artists can sell their music online for Bitcoin](https://libertymusicstore.net/).
+
+Copyright 2014 Mikko Ohtamaa, Irina Rinkovecand and Bootstrap authors.
 
 Based on design by Irina Rinkovec.
 
-[Orignal LESS source code grabbed from example theme "Agency" by Mathavan Jaya](http://startbootstrap.com/template-overviews/agency/)
+[Orignal LESS source code and example grabbed from theme "Agency" by Mathavan Jaya](http://startbootstrap.com/template-overviews/agency/)
 
 Licensed under Apache 2.0.
 
 # Usage
 
-This theme builds a CSS file which you can install as an overlay over vanilla Bootstrap CSS.
-For examples see supplied HTML files.
+The theme has a CSS file which needs to be loaded in addition to the original `bootstrap.css`.
+For usage example, see the supplied HTML preview files.
+
+Replace image assets with your own versions.
 
 # Rebuilding the theme
 
@@ -33,13 +39,18 @@ Rebuiding the theme production deployment (minified CSS):
 
 # Live editing of LESS
 
-Then start `grunt` in watch mode, will recompile CSS everything LESS changes:
+Then start `grunt` in watch mode. This will recompile CSS when LESS files are edited, either in the web browser or your text editor:
 
      node_modules/grunt-cli/bin/grunt watch
 
-## Browser support
+## Live edit browser support
 
 [Live editing LESS in Firefox](https://hacks.mozilla.org/2014/02/live-editing-sass-and-less-in-the-firefox-developer-tools/)
 
 [How to use Chrome live editing with LESS](http://code.tutsplus.com/tutorials/working-with-less-and-the-chrome-devtools--net-36636>)
+
+# Author
+
+Mikko Ohtamaa ([blog](https://opensourcehacker.com), [Facebook](https://www.facebook.com/?q=#/pages/Open-Source-Hacker/181710458567630), [Twitter](https://twitter.com/moo9000), [Google+](https://plus.google.com/u/0/103323677227728078543/))
+
 
