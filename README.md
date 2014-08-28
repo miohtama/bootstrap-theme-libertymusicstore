@@ -6,6 +6,21 @@ This is a free Bootstrap 3.2.x theme originally build for [libertymusicstore.net
 
 ![Example screenshot](https://raw.githubusercontent.com/miohtama/bootstrap-theme-libertymusicstore/master/screenshots/screenshot1.png)
 
+# About theme
+
+A Liberty Music Store theme is a Bootstrap 3.2.x theme inspired by jazz, New York and neon lights.
+It's relies on pink and blue color scheme, making it suitable for swingier music sites.
+
+* Radically different from the default Bootstrap look
+
+* Responsive
+
+* Mobile friendly
+
+* Collapsile menu bar (not fixed)
+
+* Uses Font Awesome icons
+
 Copyright 2014 Mikko Ohtamaa, Irina Rinkovecand and Bootstrap authors.
 
 Based on design by Irina Rinkovec.
@@ -20,7 +35,7 @@ Licensed under Apache 2.0.
 
 [Download ZIP](https://github.com/miohtama/bootstrap-theme-libertymusicstore/archive/master.zip)
 
-[Live preview](http://miohtama.github.io/bootstrap-theme-libertymusicstore/)
+[Theme preview (static index.html)](http://miohtama.github.io/bootstrap-theme-libertymusicstore/)
 
 # Usage
 
