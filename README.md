@@ -2,7 +2,7 @@
 
 This is a free Bootstrap 3.2.x theme originally build for [libertymusicstore.net](https://libertymusicstore.net).
 
-[Liberty Music Store is a place where artists can sell their music online for Bitcoin](https://libertymusicstore.net/).
+[See Liberty Music Store. A service where artists can sell their music online for Bitcoin](https://libertymusicstore.net/).
 
 ![Example screenshot](https://raw.githubusercontent.com/miohtama/bootstrap-theme-libertymusicstore/master/screenshots/screenshot1.png)
 
@@ -19,6 +19,8 @@ Licensed under Apache 2.0.
 [See Github project page](https://github.com/miohtama/bootstrap-theme-libertymusicstore)
 
 [Download ZIP](https://github.com/miohtama/bootstrap-theme-libertymusicstore/archive/master.zip)
+
+[Live preview](http://miohtama.github.io/bootstrap-theme-libertymusicstore/)
 
 # Usage
 
