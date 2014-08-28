@@ -4,6 +4,8 @@ This is a free Bootstrap 3.2.x theme originally build for [libertymusicstore.net
 
 [Liberty Music Store is a place where artists can sell their music online for Bitcoin](https://libertymusicstore.net/).
 
+![Example screenshot](https://raw.githubusercontent.com/miohtama/bootstrap-theme-libertymusicstore/master/screenshots/screenshot1.png)
+
 Copyright 2014 Mikko Ohtamaa, Irina Rinkovecand and Bootstrap authors.
 
 Based on design by Irina Rinkovec.
@@ -11,6 +13,12 @@ Based on design by Irina Rinkovec.
 [Orignal LESS source code and example grabbed from theme "Agency" by Mathavan Jaya](http://startbootstrap.com/template-overviews/agency/)
 
 Licensed under Apache 2.0.
+
+# Installation
+
+[See Github project page](https://github.com/miohtama/bootstrap-theme-libertymusicstore)
+
+[Download ZIP](https://github.com/miohtama/bootstrap-theme-libertymusicstore/archive/master.zip)
 
 # Usage
 
