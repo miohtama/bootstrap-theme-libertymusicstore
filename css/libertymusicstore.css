@@ -663,7 +663,14 @@ body {
   border-radius: 2px;
   border: 1px solid #333;
 }
+#out-now #example-stores .text-muted {
+  color: #fafafa;
+}
 .panel-spacer {
   height: 30px;
+}
+.form-wrapper {
+  margin: 0 auto;
+  max-width: 500px;
 }
 /*# sourceMappingURL=libertymusicstore.css.map */
