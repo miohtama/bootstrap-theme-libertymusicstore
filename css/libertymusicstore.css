@@ -627,20 +627,24 @@ body {
   text-decoration: none;
   padding: 0;
   margin: 20px;
-  width: 400px;
+  width: 300px;
   max-width: 90%;
   position: relative;
 }
 #out-now #example-stores .media .media-heading {
   padding-top: 10px;
   text-shadow: 0 1px 1px black;
+  font-size: 16px;
 }
 #out-now #example-stores .media .media-body > p {
-  font-size: 100%;
+  font-size: 12px;
   text-shadow: 0 1px 3px black;
 }
 #out-now #example-stores .media .media-object {
-  height: 128px;
+  height: 96px;
+  width: 96px;
+  margin: 10px;
+  float: left;
 }
 #out-now #example-stores .media:hover,
 #out-now #example-stores .media:focus,
