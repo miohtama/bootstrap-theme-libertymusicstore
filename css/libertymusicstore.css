@@ -465,6 +465,20 @@ header,
 .panel .panel-body a:hover {
   color: #fafafa;
 }
+.panel .panel-footer {
+  border-top: 0;
+  background: #1a1917;
+  color: #9c9897;
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 400;
+}
+.panel .panel-footer a {
+  color: #00b4ff;
+  text-decoration: none;
+}
+.panel .panel-footer a:hover {
+  color: #fafafa;
+}
 .img-thumbnail {
   background: #ff0086;
   border: #800040;
@@ -535,7 +549,7 @@ footer #footer-inner #copyright {
 }
 footer #footer-inner #follow {
   position: absolute;
-  right: 300px;
+  right: 400px;
   top: 10px;
   max-width: 200px;
   font-size: 80%;
