@@ -157,6 +157,47 @@ fieldset[disabled] .btn-primary.active {
   color: #ff0086;
   background-color: #ffffff;
 }
+.btn-default {
+  color: #ffffff;
+  background-color: #ff0086;
+  border-color: #ff0086;
+}
+.btn-default:hover,
+.btn-default:focus,
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  color: #ffffff;
+  background-color: #cc006b;
+  border-color: #c20066;
+}
+.btn-default:active,
+.btn-default.active,
+.open .dropdown-toggle.btn-default {
+  background-image: none;
+}
+.btn-default.disabled,
+.btn-default[disabled],
+fieldset[disabled] .btn-default,
+.btn-default.disabled:hover,
+.btn-default[disabled]:hover,
+fieldset[disabled] .btn-default:hover,
+.btn-default.disabled:focus,
+.btn-default[disabled]:focus,
+fieldset[disabled] .btn-default:focus,
+.btn-default.disabled:active,
+.btn-default[disabled]:active,
+fieldset[disabled] .btn-default:active,
+.btn-default.disabled.active,
+.btn-default[disabled].active,
+fieldset[disabled] .btn-default.active {
+  background-color: #ff0086;
+  border-color: #ff0086;
+}
+.btn-default .badge {
+  color: #ff0086;
+  background-color: #ffffff;
+}
 .btn-xl {
   color: #ffffff;
   background-color: #ff0086;
@@ -324,6 +365,7 @@ fieldset[disabled] .btn-xl.active {
 }
 .jumbotron {
   background: transparent;
+  padding: 0;
 }
 .jumbotron .lead {
   margin-top: 40px;
@@ -614,6 +656,9 @@ body {
   color: #fafafa;
   padding: 15px 120px;
   display: inline-block;
+}
+#site-intro .btn-mega {
+  width: 80%;
 }
 #out-now #example-stores {
   margin-top: 20px;

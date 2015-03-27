@@ -91,6 +91,10 @@ a.active {
 	font-weight: 700;
 }
 
+.btn-default {
+    .button-variant(white; @brand-primary; @brand-primary);
+}
+
 .btn-xl {
 	.button-variant(white; @brand-primary; @brand-primary);
 	.heading-font;
@@ -246,6 +250,7 @@ a.active {
 
 .jumbotron {
     background: transparent;
+    padding: 0;
 
     .lead {
         margin-top: 40px;
@@ -624,6 +629,12 @@ body {
         color: @brand-text-on-secondary;
         padding: 15px 120px;
         display: inline-block;
+    }
+}
+
+#site-intro {
+    .btn-mega {
+        width: 80%;
     }
 }
 
